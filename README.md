@@ -21,33 +21,39 @@ your app.
 
 # Project description
 
-This library is **TODO**
-
+A small example of how to build your own TikTok or Instagram Reels like use case. The example demostrates the use of api.video streaming and a css overlay of an emoji
+picker. We leverage PubNub in order to create an instant emoji sharing between users.
 # Getting started
 
 ## Installation
 
-**TODO**
+Once the repo is cloned, `run npm install` or `yarn install`
 
-## Code sample
+### Add your stream id:
 
-**TODO**
+Option 1: Navigate to the api.video dashboard and copy the stream id from the stream details
 
-# Documentation
+Option 2: Fetch the stream id from the list of streams (https://docs.api.video/reference/get_live-streams)
 
-**TODO**
+Replace the stream id in src/pages/index.tsx `const streamId = 'xxxxxxxxxx';`
 
-# Dependencies
+### Add your PubNub publishing and subscription keys
 
-We are using external library
+Sign up to PubNub
 
-| Plugin | README |
-| ------ | ------ |
-| **TODO** [Link to project]() | **TODO** [Link to README]() |
+Copy the publishing and subscrption keys
 
-# Sample application
+<img width="790" alt="Screenshot 2023-05-02 at 17 09 33" src="https://user-images.githubusercontent.com/60220723/235696165-a644b440-381e-4169-bed8-955d6a99e5a7.png">
 
-**TODO**
+Replace the keys in src/utils/messageHanlder.tsx 
+`#publishKey = 'pub-c-xxxx';
+ #subscribeKey = 'sub-c-xxxx';`
+
+### Run the example
+
+Run the example by `npm run dev`
+
+The example will run on `localhost:3000`
 
 # FAQ
 

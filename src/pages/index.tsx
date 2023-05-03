@@ -3,7 +3,7 @@ import React, { FC, useRef, useState } from 'react'
 import styles from '@/styles/Home.module.css'
 import ApiVideoPlayer from '@api.video/react-player'
 import { Emojis }  from "../components/emojis";
-import MessageHandler from '../utils/messageHanlder';
+import MessageHandler from '../utils/messagehandler';
 import GenerateUserId from '../utils/generateuserid';
 
 
